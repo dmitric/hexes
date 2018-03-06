@@ -269,7 +269,7 @@ class App extends Component {
 
         hexes.push(
           <g key={`${i}-${j}`} transform={`rotate(30 ${centerX} ${centerY})`} >
-            <polygon points={pointString} stroke={0} fill={`url(#grad-${j % 2})`} />
+            <polygon points={pointString} fill={`url(#grad-${j % 2})`} />
             <polygon
                 points={`${firstX} ${firstY} ${secondX} ${secondY} ${fourthX} ${fourthY} ${thirdX} ${thirdY}`}
                 fill={`url(#grad-${isOffset ? 1: 0})`} />
